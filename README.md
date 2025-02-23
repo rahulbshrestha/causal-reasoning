@@ -63,7 +63,7 @@ ANTHROPIC_API_KEY = "your-anthropic-api-key"
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/rahulbshrestha/your-repository.git
+    git clone https://github.com/your-account/your-repository.git
     cd your-repository
     ```
 

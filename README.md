@@ -39,6 +39,35 @@ The project is organized as follows:
 - **`.gitignore`**  
   Specifies files and directories excluded from Git version control.
 
+
+## Prompts
+
+Here, we reference the prompts from the Causal Program of Thoughts and Causal Tree of Thoughts section from our paper.
+
+The *GEN prompt* in the code can be found in src/tree-of-thoughts.ipynb
+
+```python
+generate_prompt = '''
+Question: {question} -> {causal_cot_prompt} -> 
+-> Generate {num_generated_options} possible options for this, and then put all the options in a list, each option being a string, like
+Options: {{"X", "X", "X"}}. Make sure this is in a single line!
+'''
+```
+The *EVAL prompt* in the code can be found in src/tree-of-thoughts.ipynb
+```python
+evaluate_prompt = '''
+Question: {question} -> Options: {new_thoughts} -> 
+-> Assign a score between 1 - 10 for each option in Options: depending on how well it answers the question (10 being the highest or the best), then put the score into a list, each score being a string, like
+Options: {{"X", "X", "X"}}. Make sure this is in a single line!
+```
+
+The *CODE prompt* can be found in src/prompts.py.
+
+The *ANSWER prompt* can be found in src/program-of-thoughts.ipynb
+```python
+answer_prompt = 'Question: \n' + prompt_question + "\n The solution after generating doWhy code to solve this problem is: " + solution + "\n Instruction: Based on this causal estimate, answer yes or no. Think about how the causal estimate answers the question, do not do calculations, but give an explanation. Answer: "
+```
+
 ## Requirements
 
 To run the code in this repository, ensure that you have the following dependencies installed:

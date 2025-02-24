@@ -1,7 +1,7 @@
 
-# Are LLMs faking causal reasoning? A systematic evaluation of causal reasoning in large language models and how to fix it
+# From Causal Parrots to Causal Prophets? Towards Sound Causal Reasoning with Large Language Models
 
-This repository contains the code, data, and experiments related to the paper titled *Are LLMs faking causal reasoning? A systematic evaluation of causal reasoning in large language models and how to fix it*.
+This repository contains the code, data, and experiments related to the paper titled *From Causal Parrots to Causal Prophets? Towards Sound Causal Reasoning with Large Language Models*.
 
 ## Overview
 
